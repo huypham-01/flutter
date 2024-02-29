@@ -60,6 +60,30 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
+      drawer: Drawer(
+        child: ListView(
+          children: const <Widget>[
+            DrawerHeader(
+              decoration: BoxDecoration(
+                color: Colors.green,
+              ),
+              child: Text(
+                'Hello World',
+                style: TextStyle(
+                  color: Colors.green,
+                  fontSize: 24,
+                ),
+              ),
+            ),
+            ListTile(
+              title: Text('Gallery'),
+            ),
+            ListTile(
+              title: Text('Slideshow'),
+            ),
+          ],
+        ),
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
